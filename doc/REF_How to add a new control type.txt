@@ -1,0 +1,49 @@
+﻿
+1) UIFS.Controls.cs
+	a) Add your new control class
+	b) jQuery() - any jquery needed on ajax callbacks
+
+2) UIFS.cs
+	a) UIFS.FormDataStruct()
+	b) UIFS.FormDataStruct.Get_Control()
+	c) UIFS.FormDataStruct.AddControl()
+	d) UIFS.FormDataStruct.Update_ControlCommonProperties()
+	z) --| ALL FORM LOADING AND SAVING ROUTINES
+		d.1) UIFS.Form.Load()
+		d.2) 
+	
+3) UIFS.Designer.cs
+	d) UIFS.Designer.ControlProperties()
+
+4) Ajax
+	a) case "1000", "1001"  // DISPLAY Add/Create control dialog
+	b) You will need to add a new set of "11xx" for the control functions of adding a new control and updating the properties (if it has any)
+	c) Designer_FormTemplate (for drawing on the layout)
+	
+5) Designer.js
+	a) Controls_Setup()
+	b) AddControl()
+	c) new function to update control properties if it has any
+	
+6) Designer.css
+	a) if needed
+	
+
+10) UIFS.FormOutput.cs
+	a) FormOutput.HTML
+	b) FormOutput.LoadData
+
+11) UIFS.FormInput.cs
+	a) 
+	b)
+
+12) UIFS.Reporting.cs
+
+
+
+20) DATABASE
+	a) UIFS.Form.DB_FormControl_ColumnCreation()
+	UIFS.Form.DB_FormControl_AddQuery()
+	UIFS.Form.DB_UpdateControl()
+	UIFS.Form.DB_FormControl_UpdateColumnQuery
+

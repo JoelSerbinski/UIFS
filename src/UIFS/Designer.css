@@ -1,0 +1,207 @@
+﻿body 
+{
+    font-size:12px; font-family:Arial;
+    background-color:#EEEEEE; 
+    
+}
+
+.hiddendiv {display:none; height:0px; overflow:hidden;}
+
+#content {position:relative;
+          width:760px; height:540px;
+          margin-top:auto;margin-left:auto;margin-right:auto;
+          /* border:solid 2px Black; */
+          }
+
+
+/* jquery */
+.Processing_dialog .ui-dialog-titlebar-close {display: none;} /* This removes the 'X' from the dialog window */
+
+
+/* end jquery */
+
+/* App Standard */
+#Controls {display:block; position:absolute; z-index:0;
+    top:10px; left:20px;
+    width:200px; height:500px;
+    border:solid 2px Black;
+    background-color:White;
+    }
+    
+#Controls_Header { display:block; position:absolute; z-index:2;
+    top:12px; left:22px; width:192px; 
+    color:Navy;
+    font-size:16px; font-family:Arial; font-weight:bold; text-align:center;
+    padding:4px; border-bottom:solid 1px Red;
+}
+#Controls_Container 
+{ display:block; position:absolute; z-index:2;
+    top:50px; left:26px; width:190px; height:450px;
+    
+    
+}
+.CTRL {width:145px; height:16px; font-size:1.2em; padding:5px; margin:5px;
+    background-color:#DDDDDD;
+    z-index:10; cursor:pointer;
+}
+.subCTRL {width:140px; height:14px; font-size:1em; padding:5px; margin:5px 5px 5px 10px;
+    background-color:#DDDDDD;
+    border:1px dotted green;
+    z-index:10; cursor:pointer;
+}
+
+#FormTemplate {display:block; position:absolute; z-index:0;
+    top:10px; left:240px;
+    width:500px; height:500px;
+    border:solid 2px Maroon;    
+    background-color:White;
+    font-size:.8em;
+}
+#FormTemplate_Header {display:block; position:absolute; z-index:2;
+    top:12px; left:242px; width:500px; 
+    color:Navy;
+     font-size:16px; font-family:Arial; font-weight:bold; text-align:center;
+     padding:4px 0 4px 0; border-bottom:solid 1px Red;
+}
+#FormTemplate_Header_Menu {display:block; position:absolute; z-index:3;
+    top:18px; left:250px; width:20px; height:20px;
+    background: url('Images/form.png') no-repeat 0 0;
+    cursor:pointer;
+}
+#FormMenu {display:block; position:absolute; z-index:4;
+    top:16px; left:-4px; width:200px; height:220px;
+    padding:10px 4px 4px 4px; line-height:20px;
+    font-size:16px; font-family:Arial; text-align:left; color:#333333;
+    background: url('Images/FormMenu_background.png') 0 0;
+    display: none; 
+    }
+#FormMenu table {width:100%;}
+#FormMenu table td.separator {border-bottom:solid 1px black;}
+#FormMenu table td.menuitem {border:solid 1px transparent; width:100%; padding:2px 2px 2px 6px; color:#f1ef3c;}
+#FormMenu table td.menuitem:hover {border: dotted 1px Yellow; background-color:White; color:Blue; cursor:pointer;}
+/* background-color:#40b540 */
+
+#FormTemplate_Header_Preview {display:block; position:absolute; z-index:3;
+    top:12px; left:716px; width:26px; height:26px;
+    background:transparent url('Images/form_magnify.png') no-repeat center center;
+    cursor:pointer;
+}
+
+#FormTemplate_Container { display:block; position:absolute; z-index:1;
+    top:50px; left:246px; width:490px; height:450px;
+    overflow:auto;
+}
+
+#FormTemplate_Container .portlet-content {display:block; width:430px; overflow:hidden;} /* This is the inside */
+#FormTemplate_Container table.Properties {border-collapse:collapse; width:100%; }
+#FormTemplate_Container table tr.CommonProp {background-color:Salmon;}
+#FormTemplate_Container table tr.Toolbar {}
+#FormTemplate_Container table tr.Toolbar button.Button_RemoveControl {font-size:.8em;}
+#FormTemplate_Container table td {padding:4px;}
+
+.FormCTRL_Type {color:Black; font-weight:bold;}
+.FormCTRL_Name {color:White;}
+
+.Table_SeparatorRow {height:10px; }
+.Table_SeparatorRow_SectionHeader {text-align:center;
+    border:solid 1px #999999; padding:2px;
+    font-weight:bold; color:Green;
+    background-color:#FFFFFF;
+}
+
+.portlet { margin: 0em 1em 1em 1em; width:445px;}
+.portlet-header { margin: 0.3em; padding-left: 0.2em; }
+.portlet-header .ui-icon { float: right; }
+.portlet-content { padding: 0.4em; }
+	.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+	.ui-sortable-placeholder * { visibility: hidden; }
+	
+	
+
+/* List Controls */
+#FormTemplate_Container table.Properties .List_Options {text-align:left; background-color:#DDDDDD;}
+#FormTemplate_Container table.Properties .List_Options th {text-align:center; background-color:#CCCCCC; border-bottom:dotted 1px black;}
+#FormTemplate_Container table.Properties .List_Options_List {width:270px; height:150px; overflow:auto; }
+#FormTemplate_Container table.Properties .List_Options_List	ul {list-style-type: none; margin: 0; padding: 0; }
+#FormTemplate_Container table.Properties .List_Options_List	ul li {margin: 0 5px 5px 5px; padding: 5px; font-size: 1em; height: 1.2em; overflow:hidden; text-align:left;}
+#FormTemplate_Container table.Properties .List_Options_List	ul li img {cursor:pointer;}
+.List_Options_List_sortable-highlight {height: 1.2em; line-height: 1em; border:dotted 1px black; background-color:#AAAAAA;}
+
+/* The common properties shared by all controls */
+#FormTemplate_Container table.Properties .CommonProp {} /* table row */
+#FormTemplate_Container table.Properties .CommonProp_Submit {}
+#FormTemplate_Container table.Properties .Button_floatRight {float:right;}
+
+#NewControl {}
+
+
+/* Form Open dialog */
+.Form_OpenDialog {font-size:1em;}
+/*.Form_OpenDialog .ui-dialog-buttonpane .ui-button {font-size:.9em; padding:0;}*/
+
+#Form_Open {}
+
+#FormsList {width:300px; height:350px; overflow:auto;
+    color:Blue; font-size:1.2em; background-color:White;
+    cursor:pointer; padding:4px;
+    border:2px inset gray;
+    }
+#FormsList table {width:100%; height:auto; border-spacing:0; table-layout:fixed;}
+#FormsList tr {height:25px; }
+#FormsList tr:even {background-color:#DDDDDD;}
+#FormsList tr:HOVER {background-color:Blue; color:White;}
+#FormsList td {text-align:left; padding:2px 4px 2px 4px;}
+#FormsList td.date {text-align:right;}
+#FormsList .FormsList_active {color:#000000; }
+#FormsList .FormsList_inactive {background-color:#000000; color:#BBBBBB;}
+
+#FormsListDetail {width:400px; height:350px; overflow:auto;
+                     padding:4px; font-size:1em; color:Black;
+}
+#FormsListDetail table {border-spacing:0; width:100%; table-layout:fixed;}
+#FormsListDetail table td {padding:4px;}
+#FormsListDetail td.id {font-weight:bold; width:15%; background-color:Yellow;}
+#FormsListDetail td.version {font-weight:bold; width:25%; background-color:#CCCCCC;}
+#FormsListDetail td.created {font-weight:bold; width:60%; text-align:right; background-color:#CCCCCC;}
+#FormsListDetail td.lastmodified {font-weight:bold; width:60%; text-align:right; background-color:#CCCCCC;}
+#FormsListDetail td.lastmodifiedby {font-weight:bold; width:40%; text-align:left; background-color:#CCCCCC;}
+#FormsListDetail td.description_header {font-weight:bold; font-size:1.1em; text-align:center; }
+#FormsListDetail td.description {text-align:left; color:Maroon; background-color:White;}
+
+.FormsListDetail_Visible {}
+/* END - Form Open dialog */
+
+/* Form Save dialog */
+.Form_SaveDialog {}
+.Form_SaveDialog .ui-dialog-buttonpane .ui-button {font-size:.9em; padding:0;}
+/* END - Form Save dialog */
+
+/* Form Settings dialog */
+.Form_SettingsDialog {}
+#Form_Settings {width:600px; height:330px; position:relative; background:#AAAAAA; }
+#Form_Settings_Tabs {width:130px; height:310px; position:absolute;
+                     left:0px; top:15px;
+                     margin:0; padding:0;
+                     }
+#Form_Settings_Tabs table {width:100%; border-collapse:collapse; }
+#Form_Settings_Tabs td {display:block; width:100%; font-size:1.4em; cursor:pointer;
+                        padding:4px;}
+#Form_Settings_Tabs td:HOVER {background-color:#DDDDDD; color:White;}
+#Form_Settings_Tabs td.selected {background-color:#DDDDDD; color:Red; border-left:4px solid Red;}
+
+#Form_Settings_Data {width:464px; height:310px; position:absolute;
+                     left:126px; top:0px;
+                     padding:10px;
+                     background-color:#DDDDDD;                     
+                     }
+#Form_Settings_Data div {}
+
+	
+	
+.Form_NewConfirmationDialog {}
+
+
+#FormPreview_HTML_Toolbar {background-color:White; padding:8px; border:dotted 1px black;}
+#FormPreview_HTML_Toolbar span {color:Blue; font-weight:bold; padding:2px;}
+#FormPreview_HTML_Toolbar span:HOVER {background-color:Black; color:Lime; font-style:italic; cursor:pointer;}
+

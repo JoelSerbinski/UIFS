@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFEAC8CE-0198-4ED6-BD6B-41FCFE8A6184}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIFS</RootNamespace>
+    <AssemblyName>UIFS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax.aspx" />
+    <Content Include="ajax.js" />
+    <Content Include="Designer.css" />
+    <Content Include="f11.js" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\f11animated.gif" />
+    <Content Include="Images\processing.gif" />
+    <Content Include="Images\ReportDesigner_background.png" />
+    <Content Include="Images\ReportDesigner_newreport.png" />
+    <Content Include="Images\ReportDesigner_openreport.png" />
+    <Content Include="Images\ReportDesigner_sliderleft.png" />
+    <Content Include="Images\ReportDesigner_sliderright.png" />
+    <Content Include="Images\report_preview.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\transbg_black_50.png" />
+    <Content Include="Images\transbg_red_50.png" />
+    <Content Include="jquery\css\datatables.css" />
+    <Content Include="jquery\css\jquery.jqplot.css" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\jquery-ui-1.8.23.custom.css" />
+    <Content Include="jquery\js\jqplot.pieRenderer.min.js" />
+    <Content Include="jquery\js\jqplot.pointLabels.min.js" />
+    <Content Include="jquery\js\jquery-1.8.0.min.js" />
+    <Content Include="jquery\js\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="jquery\js\jquery.dataTables.min.js" />
+    <Content Include="jquery\js\jquery.jqplot.min.js" />
+    <Content Include="jQ_extend.js" />
+    <Content Include="jquery\css\anytime.css" />
+    <Content Include="jquery\js\anytime.js" />
+    <Content Include="ReportDesigner.aspx" />
+    <Content Include="ReportDesigner.css" />
+    <Content Include="ReportDesigner.js" />
+    <Content Include="UIFS_Form.css" />
+    <Content Include="Designer.aspx" />
+    <Content Include="Designer.js" />
+    <Content Include="Images\addinfo.png" />
+    <Content Include="Images\application_get.png" />
+    <Content Include="Images\application_go.png" />
+    <Content Include="Images\application_home.png" />
+    <Content Include="Images\application_key.png" />
+    <Content Include="Images\application_lightning.png" />
+    <Content Include="Images\application_link.png" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\comments.png" />
+    <Content Include="Images\disk.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\form.png" />
+    <Content Include="Images\FormMenu_background.png" />
+    <Content Include="Images\form_add.png" />
+    <Content Include="Images\form_delete.png" />
+    <Content Include="Images\form_edit.png" />
+    <Content Include="Images\form_magnify.png" />
+    <Content Include="Images\pencil.png" />
+    <Content Include="Images\report.png" />
+    <Content Include="Images\stop.png" />
+    <Content Include="Images\transbg_white_85.png" />
+    <Content Include="Images\user_comment.png" />
+    <Content Include="Images\wrench.png" />
+    <Content Include="Images\x.png" />
+    <Content Include="Images\x2.png" />
+    <Content Include="jquery\css\ui.slider.extras.css" />
+    <Content Include="jquery\js\selectToUISlider.jQuery.js" />
+    <Content Include="Global.asax" />
+    <Content Include="UIFS_Form.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\SQL.cs" />
+    <Compile Include="App_Code\UIFS.cs" />
+    <Compile Include="App_Code\UIFS.Controls.cs" />
+    <Compile Include="App_Code\UIFS.Designer.cs" />
+    <Compile Include="App_Code\UIFS.Form.cs" />
+    <Compile Include="App_Code\UIFS.FormInput.cs" />
+    <Compile Include="App_Code\UIFS.FormOutput.cs" />
+    <Compile Include="App_Code\UIFS.FormReports.cs" />
+    <Compile Include="App_Code\UIFS.Reporting.cs" />
+    <Compile Include="ajax.aspx.cs">
+      <DependentUpon>ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designer.aspx.cs">
+      <DependentUpon>Designer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportDesigner.aspx.cs">
+      <DependentUpon>ReportDesigner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51403</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

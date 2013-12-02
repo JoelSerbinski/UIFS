@@ -1,0 +1,134 @@
+﻿body 
+{
+    font-size:.8em; font-family:Helvetica, Verdana;
+    background-color:#FFDEAD;
+    height:auto;
+}
+
+.hiddendiv {display:none; height:0px; overflow:hidden;}
+.Processing_dialog {font-size:.8em;}
+.Processing_dialog .ui-dialog-titlebar-close {display: none;} /* This removes the 'X' from the dialog window */
+
+#content {position:relative;
+          width:760px; height:540px;
+          margin-top:auto;margin-left:auto;margin-right:auto;
+          background: transparent url('Images/ReportDesigner_background.png') no-repeat 0 0;
+          /* border:solid 2px Black; */
+          }
+#VerifyScreenSize {display:none; position:absolute; z-index:9999;left:0;top:0; width:100%; height:100%; background:url('Images/transbg_black_50.png') repeat scroll 0 0 transparent;}
+#VerifyScreenSize #WaitforF11 {position:absolute; width:249px; height:125px;
+          background: transparent url('Images/f11animated.gif') no-repeat 0 0;          
+          }
+
+#MainMenu {}
+#MainMenu .NewReport {position:absolute; top:100px; left:80px; width:128px; height:128px; background: transparent url('Images/ReportDesigner_newreport.png') no-repeat 0 0;}
+#MainMenu .NewReport:HOVER {background:transparent url('Images/ReportDesigner_newreport.png') no-repeat -128px 0 ;}
+#MainMenu .OpenReport {position:absolute; top:100px; left:280px; width:128px; height:128px; background: transparent url('Images/ReportDesigner_openreport.png') no-repeat 0 0;}
+#MainMenu .OpenReport:HOVER {background:transparent url('Images/ReportDesigner_openreport.png') no-repeat -128px 0 ;}
+
+#ReportPreview_button {position:absolute; top:20px; left:680px; width:32px; height:32px;background: transparent url('Images/report_preview.png') no-repeat 0 0;}
+#ReportSave_button {position:absolute; top:12px; left:612px; width:32px; height:32px;background: transparent url('Images/save.png') no-repeat 0 0;}
+#ReportSave_button:HOVER {background: transparent url('Images/save.png') no-repeat -32px 0;}
+
+#SaveReport .input {height:50px; color:Blue; font-weight:bold;}
+#SaveReport .ReportLang {height:100px; overflow:auto; color:#FFDEAD; background-color:Black; padding:4px;}
+#SaveReport .ReportLang span.detail {color:#A0C0C0;}
+
+#OpenReport table {width:100%;}
+#OpenReport tr:HOVER {background-color:#CCC; cursor:pointer;}
+#OpenReport td {padding:4px;}
+#OpenReport div.title {font-weight:bold;}
+#OpenReport div.lang {display:none; background-color:Black; max-height:100px; overflow:auto; padding:2px; }
+
+.ReportDefinitionLanguage {color:#FFDEAD;}
+.ReportDefinitionLanguage span.detail {color:#A0C0C0;}
+
+#ReportSubject {position:absolute; top:14px; left:220px; width:420px; height:26px;
+    background-color:#FFDEAD; font-size:1.5em; color:#7b68ee;
+    }
+
+#ReportDefinition {position:absolute; top:54px; left:48px; width:670px; height:126px; overflow:auto;
+    color:White;                   
+    }
+
+.RDOption {text-align:center;} /* Report Definition options (those defined) */
+.RDOption table {width:100%;table-layout:fixed; border-collapse:collapse;}
+.RDOption tr {height:25px;}
+.RDOption td.name {color:#CDB38B; width:190px; text-align:right;}
+.RDOption td.lang {color:Yellow; width:120px; text-align:center;}
+.RDOption td.selection {color:Orange; width:250px; text-align:left;}
+.RDOption td.selection span.lang {color:Yellow;}
+.RDOption td.but {width:80px; }
+.RDOption div.button {width:76px; height:27px; background:transparent url('Images/button.png') no-repeat 0 0; display:none;
+                                           text-align:center; font-size:12px; font-weight:bold; color:White; padding:4px 0 0 0; cursor:pointer;}
+.RDOption div.button_down {width:76px; height:27px; background:transparent url('Images/button.png') no-repeat 0 -62px; 
+                                              text-align:center; font-size:12px; font-weight:bold; color:Green; padding:4px 0 0 0; cursor:pointer;}
+.RDOption div.button:HOVER {background:transparent url('Images/button.png') no-repeat 0 -31px; color:Orange;}
+#ReportOptionsSelectionbar {position:absolute; top:180px; left:48px; width:660px; height:26px; color:#8b795e;}
+#ReportOptionsSelectionbar_selectL {position:absolute; top:-4px; width:17px; height:35px; background:transparent url('Images/ReportDesigner_sliderleft.png') no-repeat 0 0;}
+#ReportOptionsSelectionbar_selectR {position:absolute; top:-4px; width:17px; height:35px; background:transparent url('Images/ReportDesigner_sliderright.png') no-repeat 0 0;}
+#ReportOptionsSelection_THATSHOWS {position:absolute; top:0;left:50px; height:26px; background-color:#4c4233;
+                                   font-size:18px; padding:0 6px;}
+#ReportOptionsSelection_THATSHOWS:hover {color:White;}
+#ReportOptionsSelection_WHERE {position:absolute; top:0;left:250px; height:26px; background-color:#4c4233;
+                                   font-size:18px; padding:0 6px;}
+#ReportOptionsSelection_WHERE:hover {color:White;}
+
+#ReportOptions {position:absolute; top:210px; left:48px; width:670px; height:300px; overflow:auto;}
+
+/* UIFS_Form.css :: modified for ReportDesigner 
+*/
+#ReportOptions_WHERE {border-collapse:collapse;margin:0;padding:0;}
+#ReportOptions_WHERE .ROpt {width:100%; height:100%;}
+#ReportOptions_WHERE .selection {width:100%;table-layout:fixed;border-collapse:collapse;}
+#ReportOptions_WHERE .selection tr {height:33px;}
+#ReportOptions_WHERE .selection td.input {width:550px;}
+#ReportOptions_WHERE .selection td.buttons {width:80px;}
+#ReportOptions_WHERE .selection .button {width:76px; height:27px; background:transparent url('Images/button.png') no-repeat 0 0; display:none;
+                                           text-align:center; font-size:16px; font-weight:bold; color:White; padding:4px 0 0 0; cursor:pointer;}
+#ReportOptions_WHERE .selection .button_down {width:76px; height:27px; background:transparent url('Images/button.png') no-repeat 0 -62px; 
+                                              text-align:center; font-size:16px; font-weight:bold; color:Red; padding:4px 0 0 0; cursor:pointer;}
+#ReportOptions_WHERE .selection .button:HOVER {background:transparent url('Images/button.png') no-repeat 0 -31px; color:Orange;}
+#ReportOptions_WHERE .selection td.input div {color:White;}
+#ReportOptions_WHERE .selection td.input div table {height:100%; width:100%; table-layout:fixed;} /* make table expand to size of div and stayed to fixed defined values */
+#ReportOptions_WHERE .selection td.input table tr {height:auto;} /* use this to standardize row height if needed */
+#ReportOptions_WHERE .selection td.input table td.Control_prompt {width:250px; font-weight:normal;}
+#ReportOptions_WHERE .selection td.input table td.Control_prompt span.name {color:#cdb38b;}
+#ReportOptions_WHERE .selection td.input table td.Control_input {width:300px; }
+#ReportOptions_WHERE .selection td.input table td span.Control_Number_Slider {width:200px;}
+#ReportOptions_WHERE .selection td.input .ControlType_Range input {color:#FFDEAD;}
+
+#ReportOptions_ThatShows {border-collapse:collapse;margin:0;padding:0;}
+#ReportOptions_ThatShows .RShow_Header {background-color:#8b795e; font-size:.8em;}
+#ReportOptions_ThatShows .RShow_Header td.mani_buttons {width:210px;}
+#ReportOptions_ThatShows .RShow_Header td.field_buttons {width:400px;}
+#ReportOptions_ThatShows .RShow {width:100%; height:100%; text-align:left;color:#FFDEAD;}
+#ReportOptions_ThatShows .RShow tr:hover {background-color:#CDB38B;color:#4c4233;}
+#ReportOptions_ThatShows .RShow td.rowpad {width:10px; }
+#ReportOptions_ThatShows .RShow td.manipulation {width: 200px; }
+#ReportOptions_ThatShows .RShow td.name {width:400px; padding-left:4px; }
+
+
+#FormSelect {width:700px; height:300px;}
+#DataTables_FormSelect {font-size:1em; }
+#DataTables_FormSelect tr {white-space:nowrap;}
+#DataTables_FormSelect tr:HOVER {background-color:Yellow;}
+#DataTables_FormSelect td {} 
+
+.ReportPreviewDialog {background:url('Images/transbg_black_50.png') repeat scroll 0 0 transparent; }
+
+#ReportPreview {display:none;}
+#ReportPreview #ReportLang {height:100px; overflow:auto; color:#FFDEAD;}
+#ReportPreview #ReportLang span.detail {color:#A0C0C0;}
+#ReportPreview #ReportData {}
+#ReportPreview #ReportAggr {color:#FFDEAD;}
+#ReportPreview #ReportAggr span.title {color:#A0C0C0;}
+
+#Reporting_DataTables {font-size:1em;}
+#Reporting_DataTables tr {white-space:nowrap;}
+/* #Reporting_DataTables tr.rowselected {background-color:Yellow;} */
+#Reporting_DataTables td {} 
+
+
+.visualizetable { border-collapse: collapse; }
+.visualizetable caption {margin: 0 0 .5em; font-size:1em; font-weight: bold; }

@@ -1,0 +1,57 @@
+﻿
+
+/** --| Form Output |--
+*
+*
+*/
+
+/* PREVIEW/DISPLAY FORMS */
+.Control_tip {}
+.Control_prompt {font-weight:bold; width:200px; text-align:right;}
+.Control_input {text-align:left;}
+
+.Control_DateTime {background:#FFFFFF url('Images/calendar.png') no-repeat right center; cursor:pointer; }
+.Control_Number_Slider {width:120px; float:right;} /* you MUST set the width */
+
+.ControlType_Percentage {height:60px;}
+.ControlType_Percentage .ui-slider {clear:none; margin: 0 2em 0 5em; top:-1em; font-size:1em;}
+
+.ControlType_Range { }
+.ControlType_Range table {height:100%; width:100%;}
+.ControlType_Range .ui-slider {clear:both; top:.5em; margin: 0 2em 0 2em;}
+.ControlType_Range input {border: none; background-color:transparent; color:Blue; font-weight:bold;}
+.ControlType_Range .Control_input {text-align:center; vertical-align:middle;}
+.ControlType_Range .Control_input td.label {text-align:right;}
+.ControlType_Range .Control_input td.value {text-align:left; width:75%;}
+.ControlType_Range .Control_input tr.slider {height:35px;} /* set our row height for slider control */
+
+.ControlType_List .slider {height:80px;}  /* adjust our row height for slider control */
+.ControlType_List .ui-slider {clear:none; margin: 0 4em 0 0; top:.5em; font-size:1em; white-space:nowrap;}
+
+/* These are the basic defaults for formatting the output
+    -- Copy and modify for individual apps
+*/
+#ControlColumn_1 {border-collapse:collapse; margin:0px;padding:0px; overflow:hidden;}
+#ControlColumn_1 div {background-color:#EEEEEE;}
+#ControlColumn_1 div table {height:100%; width:100%; table-layout:fixed;} /* make table expand to size of div and stayed to fixed defined values */
+#ControlColumn_1 table tr {height:auto;} /* use this to standardize row height if needed */
+#ControlColumn_1 table td.Control_prompt {width:150px; background-color:#DDDDDD;}
+#ControlColumn_1 table td.Control_input {width:250px; }
+#ControlColumn_1 table td span.Control_Number_Slider {width:200px;}
+
+#ControlColumn_1 .invalid {background:#FF8080;}
+
+/* generally, you want these mirrored... */
+#ControlColumn_2 {border-collapse:collapse; margin:0px;padding:0px; overflow:hidden;}
+#ControlColumn_2 div {background-color:#EEEEEE;}
+#ControlColumn_2 div table {height:100%; width:100%; table-layout:fixed;}
+#ControlColumn_2 table tr {height:auto;} /* use this to standardize row height if needed */
+#ControlColumn_2 table td.Control_prompt {width:150px; background-color:#DDDDDD; }
+#ControlColumn_2 table td.Control_input {width:250px; }
+#ControlColumn_2 table td span.Control_Number_Slider {width:200px;}
+
+
+/* -- For jquery plugin: anytime
+*/
+.AnyTime-win {z-index:99999;}
+

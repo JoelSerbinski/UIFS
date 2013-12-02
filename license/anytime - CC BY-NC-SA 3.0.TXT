@@ -1,0 +1,52 @@
+/*****************************************************************************
+*  FILE:  anytime.js - The Any+Time(TM) JavaScript Library (source)
+*
+*  VERSION: 4.1112H
+*
+*  Copyright 2008-2010 Andrew M. Andrews III (www.AMA3.com). Some Rights 
+*  Reserved. This work licensed under the Creative Commons Attribution-
+*  Noncommercial-Share Alike 3.0 Unported License except in jurisdicitons
+*  for which the license has been ported by Creative Commons International,
+*  where the work is licensed under the applicable ported license instead.
+*  For a copy of the unported license, visit
+*  http://creativecommons.org/licenses/by-nc-sa/3.0/
+*  or send a letter to Creative Commons, 171 Second Street, Suite 300,
+*  San Francisco, California, 94105, USA.  For ported versions of the
+*  license, visit http://creativecommons.org/international/
+*
+*  Alternative licensing arrangements may be made by contacting the
+*  author at http://www.AMA3.com/contact/
+*
+*  The Any+Time(TM) JavaScript Library provides the following ECMAScript
+*  functionality:
+*
+*    AnyTime.Converter
+*      Converts Dates to/from Strings, allowing a wide range of formats
+*      closely matching those provided by the MySQL DATE_FORMAT() function,
+*      with some noteworthy enhancements.
+*
+*    AnyTime.pad()
+*      Pads a value with a specific number of leading zeroes.
+*      
+*    AnyTime.noPicker()
+*      Destroys a calendar widget previously added by AnyTime.picker().
+*      Can also be invoked via jQuery using $(selector).AnyTime_noPicker()
+*
+*    AnyTime.picker()
+*      Attaches a calendar widget to a text field for selecting date/time
+*      values with fewer mouse movements than most similar pickers.  Any
+*      format supported by AnyTime.Converter can be used for the text field.
+*      If JavaScript is disabled, the text field remains editable without
+*      any of the picker features.
+*      Can also be invoked via jQuery using $(selector).AnyTime_picker()
+*
+*  IMPORTANT NOTICE:  This code depends upon the jQuery JavaScript Library
+*  (www.jquery.com), currently version 1.4.
+*
+*  The Any+Time(TM) code and styles in anytime.css have been tested (but not
+*  extensively) on Windows Vista in Internet Explorer 8.0, Firefox 3.0, Opera
+*  10.10 and Safari 4.0.  Minor variations in IE6+7 are to be expected, due
+*  to their broken box model. Please report any other problems to the author
+*  (URL above).
+*
+*  Any+Time is a trademark of Andrew M. Andrews III.
